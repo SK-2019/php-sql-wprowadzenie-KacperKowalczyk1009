@@ -1,8 +1,8 @@
 <?php
-$host = 'remotemysql.com'
-$db = 'Qp5kr9aFAZ'
-$user = 'Qp5kr9aFAZ'
-$pass = 'nLj0fYkQ76'
+$host = 'remotemysql.com';
+$db = 'Qp5kr9aFAZ';
+$user = 'Qp5kr9aFAZ';
+$pass = 'nLj0fYkQ76';
 
 // Create connection
 $conn = new mysqli($host, $user, $pass, $db);

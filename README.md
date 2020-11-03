@@ -1,1 +1,1 @@
-# PHP-SQL-wprowadzenie
+# PHP-SQL-wprowadzenie.

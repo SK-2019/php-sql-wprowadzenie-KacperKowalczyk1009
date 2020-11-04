@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>Kacper Kowalczyk 2Ti</h1>
+<h1>Kacper Kowalczyk 2Ti nr 16</h1>
   
    <a href="https://github.com/SK-2019/php-sql-wprowadzenie-KacperKowalczyk1009"> link do githuba mojego </a>
 <?php

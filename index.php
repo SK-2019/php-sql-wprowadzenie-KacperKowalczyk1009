@@ -6,10 +6,7 @@
 <body>
 <h1>Kacper Kowalczyk 2Ti nr 16</h1>
   
-  <form action="strona.php" method="POST">
-     <input type="text" name="asd"></br>
-     <input type="submit" value="wyślij do strona.php">
-  </form>
+  
   
    <a href="https://github.com/SK-2019/php-sql-wprowadzenie-KacperKowalczyk1009"> Mój GITHUB </a>
   

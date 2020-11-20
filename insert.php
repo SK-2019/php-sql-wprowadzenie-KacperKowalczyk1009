@@ -27,8 +27,11 @@
 echo("jesteś na strona.php");
      
 echo("<li>imie:".$_POST["imie"]);
+     
 echo("<li>dzial:".$_POST["dzial"]);
+     
 echo("<li>zarobki:".$_POST["zarobki"]);
+     
 echo("<li>data_urodzenia:".$_POST["data_urodzenia"]);     
 
 require_once('conn.php');

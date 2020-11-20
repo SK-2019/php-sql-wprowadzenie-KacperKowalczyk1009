@@ -28,8 +28,8 @@ echo("<li>nazwisko:".$_POST["nazwisko"]);
 echo("<li>klasa:".$_POST["klasa"]);
 
 require_once('conn.php');
-  $sql = "INSERT INTO pracownicy (imie, nazwisko)
-  VALUES ('John', 'Doe')";
+  $sql = "INSERT INTO `pracownicy`('id_pracownicy', 'imie', 'nazwisko', 'dzial', 'zarobki', 'data_urodzenia') VALUES (null, 'Kamil', 'Bonk', 3, 33, 1991-01-11)";
+  
   
   if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";

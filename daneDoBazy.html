@@ -37,7 +37,11 @@
    <input type="submit" value="ok">
 	   
 	   <?php
-echo("<hr />");
+equire_once('conn.php');
+
+    $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org');
+    $result=$conn->query($sql);     
+
 echo("<table>");      
 echo("<th>id</th>");
 
@@ -55,7 +59,7 @@ echo("<th>Usun</th>");
             while($row=$result->fetch_assoc()){ 
 
                 echo("<tr>");
-require_once('conn.php');
+
 
   echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["nazwa_dzial"]."</td>");
 

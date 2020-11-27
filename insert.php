@@ -24,7 +24,7 @@
 <?php
 
 
-echo("jesteś na strona.php");
+echo("jesteś na insert.php");
      
 echo("<li>imie:".$_POST["imie"]);
      

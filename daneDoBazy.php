@@ -36,44 +36,38 @@
        <input type="text" name="id" placeholder="ID"></br>
    <input type="submit" value="ok">
 	   
-	   <?php
-require_once('conn.php');
+	    <?php	  
+ require_once('conn.php');
 
     $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org');
+
     $result=$conn->query($sql);     
 
-echo("<table>");      
-echo("<th>id</th>");
-
-echo("<th>Imie</th>");
-
-echo("<th>Dzial</th>");
-
-echo("<th>Zarobki</th>");
-
-echo("<th>Data_Urodzenia</th>");
-
-echo("<th>Nazwa_Dzial</th>");
-
-echo("<th>Usun</th>");
+        echo("<table>");      
+        echo("<th>id</th>");
+        echo("<th>Imie</th>");
+        echo("<th>Dzial</th>");
+        echo("<th>Zarobki</th>");
+        echo("<th>Data_urodzenia</th>");
+        echo("<th>Nazwa_dzialu</th>");
+        echo("<th>Usun</th>");
             while($row=$result->fetch_assoc()){ 
-
                 echo("<tr>");
-
-
-  echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["nazwa_dzial"]."</td>");
-
-   echo("<td><form action='delete.php' method=POST>");
+                    echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["nazwa_dzial"]."</td>"); 
 
    echo("<input type='text' name='id' value='".$row['id_pracownicy']."'>");
 
-   echo("<input type=submit value='Usun'>");
+   echo("<td><form action='delete.php' method=POST>");
 
-    echo("</form></td>");
+  echo("<name='id' value='".$row['id_pracownicy']."'>");
 
-   echo("</tr>");
+  echo("<input type='submit' value='usun'");
+
+		    echo("</form></td>");
+                echo("</tr>");
             }
         echo("</table>");
+
 ?>
 </form>
 </body>

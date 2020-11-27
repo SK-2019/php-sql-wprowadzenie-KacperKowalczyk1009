@@ -11,7 +11,7 @@
    <a class="nav_link" href="pracownicy_organizacja.php"><b>Pracownicy Organizacja<b></a>
    <a class="nav_link" href="/">Strona Glowna</a>  
    <a class="nav_link" href="formularz.html"><b>Formularz<b></a>
-    <a class="nav_link" href="daneDoBazy.html"><b>Dane do bazy<b></a>  
+    <a class="nav_link" href="daneDoBazy.php"><b>Dane do bazy<b></a>  
        <a class="nav_link" href="function.php"><b>Function<b></a>
 <?php
     require_once('conn.php');;

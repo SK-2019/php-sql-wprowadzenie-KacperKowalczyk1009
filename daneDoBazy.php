@@ -18,10 +18,10 @@
   <meta name="viewport" content="width=device-width">
   <title>Dane do Bazy</title>
 </head>
-		
+<body>		
 <h2>Dodawanie:</h2>		
 		
-<body>
+
 	<form action="insert.php" method="POST">
       <input type="text" name="imie" placeholder="imie"></br>
      <input type="text" name="dzial" placeholder="dzial"></br>

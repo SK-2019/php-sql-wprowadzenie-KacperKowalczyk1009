@@ -18,7 +18,7 @@
    <a class="nav_link" href="formularz.html"><b>Formularz<b></a>
 
         
-        /body>
+        </body>
 </html>
 
 <?php

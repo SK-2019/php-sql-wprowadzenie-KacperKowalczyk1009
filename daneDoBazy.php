@@ -35,6 +35,7 @@
 <form action="delete.php" method="POST">
        <input type="text" name="id" placeholder="ID"></br>
    <input type="submit" value="Usun">
+	   </form>
 	   
 	    <?php	  
  require_once('conn.php');

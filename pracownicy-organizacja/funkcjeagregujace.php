@@ -26,8 +26,9 @@
  
       
                   echo("<hr />");
-             require_once('conn.php');
+             require_once('/assets/conn.php');
             $sql=('SELECT sum(zarobki) as suma from pracownicy');
+            $conn = new mysqli('remotemysql.com','Qp5kr9aFAZ','nLj0fYkQ76', 'Qp5kr9aFAZ');
             $result=$conn->query($sql); //mysql
                 echo("<h3>Suma zarobków wszystkich pracowników</h3>");//nazwa nad tabelą
                 echo("<table border=1>");
@@ -57,6 +58,8 @@
 
 
 $sql=('SELECT nazwa_dzial,avg(zarobki) as srednia from pracownicy,organizacja where dzial=4 and dzial=id_org group by nazwa_dzial');
+$conn = new mysqli('remotemysql.com','Qp5kr9aFAZ','nLj0fYkQ76', 'Qp5kr9aFAZ');
+
         $result=$conn->query($sql); //mysql
             echo("<h3>Średnia zarobków pracowników z działu 4</h3>");//nazwa nad tabelą
             echo("<table border=1>");

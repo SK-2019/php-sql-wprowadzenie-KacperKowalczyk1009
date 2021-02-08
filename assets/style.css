@@ -12,9 +12,11 @@ th {
   color: white;
 }
 table {
+  
   border-collapse: collapse;
   border: 3px solid black;
-  margin-left: 20px auto;
+  flex-direction: column;
+  display: flex;
 }
 
 p {

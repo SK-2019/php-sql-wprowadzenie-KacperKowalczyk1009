@@ -24,10 +24,10 @@
 <div class="con">
 
 <?php
-   include("conn.php");
+   include("/assets/conn.php");
 
     $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org');
-    $conn = new mysqli('remotemysql.com','Qp5kr9aFAZ','Qp5kr9aFAZ','nLj0fYkQ76');
+    $conn = new mysqli('remotemysql.com','Qp5kr9aFAZ','nLj0fYkQ76', 'Qp5kr9aFAZ');
     $result=$conn->query($sql);
         echo("<hr />");
         echo("<h3>Tabela Pracowników</h3>");
@@ -47,10 +47,10 @@
     echo("<hr />");
 
 
-    include("conn.php");
+    include("/assets/conn.php");
 $sql=('SELECT * from pracownicy,organizacja where dzial=id_org and imie like "%a"');
-$conn = new mysqli('remotemysql.com','Qp5kr9aFAZ','Qp5kr9aFAZ','nLj0fYkQ76');
-    $result=$conn->query($sql);
+$conn = new mysqli('remotemysql.com','Qp5kr9aFAZ','nLj0fYkQ76', 'Qp5kr9aFAZ');
+$result=$conn->query($sql);
         echo("<h3>Tabela Kobiet</h3>");//nazwa nad tabelą
         echo("<li>$sql");
         echo("<table border=1>");
@@ -71,8 +71,8 @@ echo("<hr />");
 
 include("conn.php");
 $sql=('SELECT * from pracownicy,organizacja where dzial=id_org  order by imie asc');
-$conn = new mysqli('remotemysql.com','Qp5kr9aFAZ','Qp5kr9aFAZ','nLj0fYkQ76');
-    $result=$conn->query($sql); //mysql
+$conn = new mysqli('remotemysql.com','Qp5kr9aFAZ','nLj0fYkQ76', 'Qp5kr9aFAZ');
+$result=$conn->query($sql); //mysql
         echo("<h3>Tabela Pracowników Posortowana Alfabetycznie</h3>");//nazwa nad tabelą
         echo("<li>$sql");
         echo("<table border=1>");
@@ -88,13 +88,12 @@ $conn = new mysqli('remotemysql.com','Qp5kr9aFAZ','Qp5kr9aFAZ','nLj0fYkQ76');
                 echo("</tr>");
             }
         echo("</table>");
-echo("<hr />");
 
 
 include("conn.php");
 $sql=('SELECT * from pracownicy,organizacja where dzial=id_org  order by zarobki asc');
-$conn = new mysqli('remotemysql.com','Qp5kr9aFAZ','Qp5kr9aFAZ','nLj0fYkQ76');
-    $result=$conn->query($sql); //mysql
+$conn = new mysqli('remotemysql.com','Qp5kr9aFAZ','nLj0fYkQ76', 'Qp5kr9aFAZ');
+$result=$conn->query($sql); //mysql
         echo("<h3>Tabela Pracowników Posortowana Zarobkami Rosnąco</h3>");//nazwa nad tabelą
         echo("<table border=1>");
         echo("<li>$sql");

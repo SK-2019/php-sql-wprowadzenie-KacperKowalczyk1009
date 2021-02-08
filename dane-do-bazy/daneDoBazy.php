@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+c<!DOCTYPE html>
 <html>
 <head>
     <h1>Kacper Kowalczyk 2Ti nr 16</h1>
@@ -47,6 +47,8 @@
  require_once('conn.php');
 
     $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org');
+    $conn = new mysqli('remotemysql.com','Qp5kr9aFAZ','nLj0fYkQ76', 'Qp5kr9aFAZ');
+
 
     $result=$conn->query($sql);     
 

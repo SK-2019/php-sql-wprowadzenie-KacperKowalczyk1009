@@ -26,7 +26,7 @@
  
       
                   echo("<hr />");
-             require_once('/assets/conn.php');
+             require_once('conn.php');
             $sql=('SELECT sum(zarobki) as suma from pracownicy');
             $conn = new mysqli('remotemysql.com','Qp5kr9aFAZ','nLj0fYkQ76', 'Qp5kr9aFAZ');
             $result=$conn->query($sql); //mysql

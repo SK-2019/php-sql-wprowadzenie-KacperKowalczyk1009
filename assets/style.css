@@ -44,6 +44,10 @@ h1 {
   text-align: center;
 }
 
+tr:hover{
+  background-color: rgba(142, 221, 235, 0.541);
+}
+
 .button {
   bottom: auto;
   background-color: rgba(236, 65, 65, 0.726) ;

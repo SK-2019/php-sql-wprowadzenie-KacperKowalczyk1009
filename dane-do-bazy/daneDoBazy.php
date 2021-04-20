@@ -1,19 +1,12 @@
-c<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <h1>Kacper Kowalczyk 2Ti nr 16</h1>
 
     <div class= "nav">
-  
-   <a href="https://github.com/SK-2019/php-sql-wprowadzenie-KacperKowalczyk1009"> Mój GITHUB </a>
-  
-  <a class="nav_link" href="/pracownicy-organizacja/pracownicy.php"><b>Pracownicy<b></a>
-   <a class="nav_link" href="/pracownicy-organizacja/funkcjeagregujace.php"><b>Funkcje Agregujace<b></a>
-   <a class="nav_link" href="/pracownicy-organizacja/pracownicy_organizacja.php"><b>Pracownicy Organizacja<b></a>
-   <a class="nav_link" href="/">Strona Glowna</a>  
-   <a class="nav_link" href="/dane-do-bazy/formularz.html"><b>Formularz<b></a>
-<a class="nav_link" href="/dane-do-bazy/daneDoBazy.php"><b>Dane do bazy<b></a>
-
+    <?php
+include("../assets/menu.php");
+?>
 </div>
 	   
 <link rel="stylesheet" href="/assets/style.css">	
@@ -44,10 +37,9 @@ c<!DOCTYPE html>
 	   </form>
 	   
 	    <?php	  
- require_once('conn.php');
+ require_once('../connect.php');
 
     $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org');
-    $conn = new mysqli('remotemysql.com','Qp5kr9aFAZ','nLj0fYkQ76', 'Qp5kr9aFAZ');
 
 
     $result=$conn->query($sql);     

@@ -8,6 +8,25 @@
     <title>Wiele do wielu</title>
 </head>
 
+<style>
+                body {
+          background-image:url(https://www.pixeden.com/images/stories/blog/wallpapers/1212/1366x768.jpg);
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+
+                }
+	</style>	
+
+<div class="nav">
+
+<?php
+include("assets/menu.php")
+?>
+   
+
+</div>
+
 
 <?php
                 echo("<h1>Kacper Kowalczyk</h1>");

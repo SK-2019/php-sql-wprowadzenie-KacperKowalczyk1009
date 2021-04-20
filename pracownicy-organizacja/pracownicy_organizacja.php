@@ -9,14 +9,9 @@
 <h1>Kacper Kowalczyk 2Ti nr 16</h1>
 
 <div class="nav">
-<a href="https://github.com/SK-2019/php-sql-wprowadzenie-KacperKowalczyk1009"> Mój GITHUB </a>
-  
-  <a class="nav_link" href="/pracownicy-organizacja/pracownicy.php"><b>Pracownicy<b></a>
-   <a class="nav_link" href="/pracownicy-organizacja/funkcjeagregujace.php"><b>Funkcje Agregujace<b></a>
-   <a class="nav_link" href="/pracownicy-organizacja/pracownicy_organizacja.php"><b>Pracownicy Organizacja<b></a>
-   <a class="nav_link" href="/">Strona Glowna</a>  
-   <a class="nav_link" href="/dane-do-bazy/formularz.html"><b>Formularz<b></a>
-<a class="nav_link" href="/dane-do-bazy/daneDoBazy.php"><b>Dane do bazy<b></a>
+<?php
+include("../assets/menu.php");
+?>
 </div>
 
 <div class="con">
@@ -24,14 +19,14 @@
    <?php
 
    
-      require_once('conn.php');
+      require_once('../connect.php');
    
    
     $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org');
     $result=$conn->query($sql);
         echo("<hr />");
-        echo("<h3>Tabela Pracowników</h3>");
-        echo("<li>$sql");
+        echo("<h2>Tabela Pracowników</h2>");
+        echo("<h3>$sql</h3>");
         echo("<table border=1>");
         echo("<th>id</th>");
         echo("<th>imie</th>");
@@ -49,8 +44,8 @@
           $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org and (dzial=1 or dzial=4)');
     $result=$conn->query($sql);
         echo("<hr />");
-        echo("<h3>Tabela pracowników z dzialu 1 oraz 4</h3>");
-        echo("<li>$sql");
+        echo("<h2>Tabela pracowników z dzialu 1 oraz 4</h2>");
+        echo("<h3>$sql</h3>");
         echo("<table border=1>");
         echo("<th>id</th>");
         echo("<th>imie</th>");
@@ -70,8 +65,8 @@
                 $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org and imie like "%a"');
     $result=$conn->query($sql);
         echo("<hr />");
-        echo("<h3>Tabela kobiet</h3>");
-        echo("<li>$sql");
+        echo("<h2>Tabela kobiet</h2>");
+        echo("<h3>$sql</h3>");
         echo("<table border=1>");
         echo("<th>id</th>");
         echo("<th>imie</th>");
@@ -91,8 +86,8 @@
                       $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org and imie not like "%a"');
     $result=$conn->query($sql);
         echo("<hr />");
-        echo("<h3>Tabela mezczyzn</h3>");
-        echo("<li>$sql");
+        echo("<h2>Tabela mezczyzn</h2>");
+        echo("<h3>$sql</h3>");
         echo("<table border=1>");
         echo("<th>id</th>");
         echo("<th>imie</th>");
@@ -116,8 +111,8 @@
       $sql=('select * from pracownicy,organizacja where dzial=id_org order by imie desc');
     $result=$conn->query($sql);
         echo("<hr />");
-        echo("<h3>Tabela pracownikow posortowanych malejaco wg imienia</h3>");
-        echo("<li>$sql");
+        echo("<h2>Tabela pracownikow posortowanych malejaco wg imienia</h2>");
+        echo("<h3>$sql</h3>");
         echo("<table border=1>");
         echo("<th>id</th>");
         echo("<th>imie</th>");
@@ -137,8 +132,8 @@
             $sql=('select * from pracownicy,organizacja where dzial=id_org and dzial=3 order by imie asc');
     $result=$conn->query($sql);
         echo("<hr />");
-        echo("<h3>Tabela pracownikow dzialu 3 posortowanych rosnaco wg imienia</h3>");
-        echo("<li>$sql");
+        echo("<h2>Tabela pracownikow dzialu 3 posortowanych rosnaco wg imienia</h2>");
+        echo("<h3>$sql</h3>");
         echo("<table border=1>");
         echo("<th>id</th>");
         echo("<th>imie</th>");
@@ -157,8 +152,8 @@
            $sql=('select * from pracownicy,organizacja where dzial=id_org and imie like "%a" order by imie asc');
     $result=$conn->query($sql);
         echo("<hr />");
-        echo("<h3>Tabela pracownikow kobiet posortowanych rosnaco wg imienia</h3>");
-        echo("<li>$sql");
+        echo("<h2>Tabela pracownikow kobiet posortowanych rosnaco wg imienia</h2>");
+        echo("<h3>$sql</h3>");
         echo("<table border=1>");
         echo("<th>id</th>");
         echo("<th>imie</th>");
@@ -179,8 +174,8 @@
                  $sql=('select * from pracownicy,organizacja where dzial=id_org and imie like "%a" order by zarobki asc');
     $result=$conn->query($sql);
         echo("<hr />");
-        echo("<h3>Tabela pracownikow kobiet posortowanych rosnaco wg zarobkow</h3>");
-        echo("<li>$sql");
+        echo("<h2>Tabela pracownikow kobiet posortowanych rosnaco wg zarobkow</h2>");
+        echo("<h3>$sql</h3>");
         echo("<table border=1>");
         echo("<th>id</th>");
         echo("<th>imie</th>");
@@ -200,8 +195,8 @@
                        $sql=('select * from pracownicy,organizacja where dzial=id_org and imie not like "%a" order by nazwa_dzial, zarobki asc');
     $result=$conn->query($sql);
         echo("<hr />");
-        echo("<h3>Tabela pracownikow kobiet posortowanych rosnaco wg zarobkow</h3>");
-        echo("<li>$sql");
+        echo("<h2>Tabela pracownikow kobiet posortowanych rosnaco wg zarobkow</h2>");
+        echo("<h3>$sql</h3>");
         echo("<table border=1>");
         echo("<th>id</th>");
         echo("<th>imie</th>");

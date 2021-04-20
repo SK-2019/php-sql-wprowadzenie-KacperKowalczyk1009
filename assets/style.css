@@ -12,7 +12,8 @@ th {
   color: white;
 }
 table {
-  
+  background-color: orange;
+  color: rgb(221, 73, 73);
   border-collapse: collapse;
   border: 3px solid black;
   flex-direction: column;
@@ -45,7 +46,7 @@ h1 {
 
 .button {
   bottom: auto;
-  background-color: ;
+  background-color: rgba(236, 65, 65, 0.726) ;
   border: brown;
   color: white;
   padding: 15px 32px;
@@ -105,6 +106,4 @@ h1 {
     background-color: darkgoldenrod;
     color: white;
     box-shadow: 3px, 3px, 3px, black;
-/* .nav_link {
-  color: red;
-} */
+}

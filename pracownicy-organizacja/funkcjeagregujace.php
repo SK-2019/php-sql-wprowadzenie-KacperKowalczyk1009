@@ -9,14 +9,9 @@
 <h1>Kacper Kowalczyk 2Ti nr 16</h1>
 
 <div class="nav">
-<a href="https://github.com/SK-2019/php-sql-wprowadzenie-KacperKowalczyk1009"> Mój GITHUB </a>
-  
-  <a class="nav_link" href="/pracownicy-organizacja/pracownicy.php"><b>Pracownicy<b></a>
-   <a class="nav_link" href="/pracownicy-organizacja/funkcjeagregujace.php"><b>Funkcje Agregujace<b></a>
-   <a class="nav_link" href="/pracownicy-organizacja/pracownicy_organizacja.php"><b>Pracownicy Organizacja<b></a>
-   <a class="nav_link" href="/">Strona Glowna</a>  
-   <a class="nav_link" href="/dane-do-bazy/formularz.html"><b>Formularz<b></a>
-<a class="nav_link" href="/dane-do-bazy/daneDoBazy.php"><b>Dane do bazy<b></a>
+<?php
+include("../assets/menu.php");
+?>
 </div>
 
 <div class="con">
@@ -26,13 +21,12 @@
  
       
                   echo("<hr />");
-             require_once('conn.php');
+             require_once('../connect.php');
             $sql=('SELECT sum(zarobki) as suma from pracownicy');
-            $conn = new mysqli('remotemysql.com','Qp5kr9aFAZ','nLj0fYkQ76', 'Qp5kr9aFAZ');
             $result=$conn->query($sql); //mysql
-                echo("<h3>Suma zarobków wszystkich pracowników</h3>");//nazwa nad tabelą
+                echo("<h2>Suma zarobków wszystkich pracowników</h2>");//nazwa nad tabelą
                 echo("<table border=1>");
-                echo("<li>SQL: $sql");
+                echo("<h3>$sql</h3>");
                 echo("<th>suma</th>");
                     while($row=$result->fetch_assoc()){
                         echo("<tr>");
@@ -43,9 +37,9 @@
         echo("<hr />");
         $sql=('SELECT nazwa_dzial,sum(zarobki) as suma from pracownicy,organizacja where imie like "%a" and dzial=id_org group by nazwa_dzial');
         $result=$conn->query($sql); //mysql
-            echo("<h3>Suma zarobków wszystkich kobiet</h3>");//nazwa nad tabelą
+            echo("<h2>Suma zarobków wszystkich kobiet</h2>");//nazwa nad tabelą
             echo("<table border=1>");
-            echo("<li>SQL: $sql");
+            echo("<h3>$sql</h3>");
             echo("<th>suma</th>");
             echo("<th>nazwa działu</th>");
                 while($row=$result->fetch_assoc()){
@@ -58,12 +52,11 @@
 
 
 $sql=('SELECT nazwa_dzial,avg(zarobki) as srednia from pracownicy,organizacja where dzial=4 and dzial=id_org group by nazwa_dzial');
-$conn = new mysqli('remotemysql.com','Qp5kr9aFAZ','nLj0fYkQ76', 'Qp5kr9aFAZ');
 
         $result=$conn->query($sql); //mysql
-            echo("<h3>Średnia zarobków pracowników z działu 4</h3>");//nazwa nad tabelą
+            echo("<h2>Średnia zarobków pracowników z działu 4</h2>");//nazwa nad tabelą
             echo("<table border=1>");
-            echo("<li>SQL: $sql");
+            echo("<h3>$sql</h3>");
             echo("<th>srednia</th>");
             echo("<th>nazwa działu</th>");
                 while($row=$result->fetch_assoc()){
@@ -75,9 +68,9 @@ $conn = new mysqli('remotemysql.com','Qp5kr9aFAZ','nLj0fYkQ76', 'Qp5kr9aFAZ');
     echo("<hr />");
     $sql=('SELECT nazwa_dzial,avg(zarobki) as srednia from pracownicy,organizacja where imie not like "%a" and dzial=1 or dzial=2 and dzial=id_org group by nazwa_dzial');
     $result=$conn->query($sql); //mysql
-        echo("<h3>Średnia zarobków mężczyzn z działu 1 i 2</h3>");//nazwa nad tabelą
+        echo("<h2>Średnia zarobków mężczyzn z działu 1 i 2</h2>");//nazwa nad tabelą
         echo("<table border=1>");
-        echo("<li>SQL: $sql");
+        echo("<h3>$sql</h3>");
         echo("<th>srednia</th>");
         echo("<th>nazwa działu</th>");
             while($row=$result->fetch_assoc()){
@@ -93,12 +86,11 @@ echo("<hr />");
       
       
       function robot_pracownicy($nr_zad, $f_sql){
-                $conn = new mysqli("remotemysql.com", "Qp5kr9aFAZ", "nLj0fYkQ76", "Qp5kr9aFAZ");
                 $sql=$f_sql;
                 $result=$conn->query($sql);
                     echo("<table border=1>");
-                    echo("<h3>ZAD $nr_zad</h3>");
-                    echo("<li>SQL: $sql");
+                    echo("<h2>ZAD $nr_zad</h2>");
+                    echo("<h3>$sql</h3>");
                     echo("<th>id</th>");
                     echo("<th>imię</th>");
                     echo("<th>dział</th>");
@@ -113,12 +105,11 @@ echo("<hr />");
     robot_pracownicy(1,'SELECT * FROM pracownicy');
 
             function robot_avg($nr_zad, $f_sql){
-            $conn = new mysqli("remotemysql.com", "Qp5kr9aFAZ", "nLj0fYkQ76", "Qp5kr9aFAZ");
                $sql=$f_sql;
                 $result=$conn->query($sql);
                     echo("<table border=1>");
-                    echo("<h3>ZAD $nr_zad</h3>");
-                    echo("<li>SQL: $sql");
+                    echo("<h2>ZAD $nr_zad</h2>");
+                    echo("<h3>$sql</h3>");
                     echo("<th>dział</th>");
                     echo("<th>średnia</th>");
                         while($row=$result->fetch_assoc()){
@@ -131,12 +122,11 @@ echo("<hr />");
     robot_avg(2,'SELECT dzial,avg(zarobki) as srednia from pracownicy group by dzial');
 
             function robot_count($nr_zad, $f_sql){
-                $conn = new mysqli("remotemysql.com", "Qp5kr9aFAZ", "nLj0fYkQ76", "Qp5kr9aFAZ");
                 $sql=$f_sql;
                 $result=$conn->query($sql);
                     echo("<table border=1>");
-                    echo("<h3>ZAD $nr_zad</h3>");
-                    echo("<li>SQL: $sql");
+                    echo("<h2>ZAD $nr_zad</h2>");
+                    echo("<h3>$sql</h3>");
                     echo("<th>dział</th>");
                     echo("<th>ilość</th>");
                         while($row=$result->fetch_assoc()){
@@ -149,12 +139,11 @@ echo("<hr />");
     robot_count(3,'SELECT dzial,count(imie) as ilosc from pracownicy group by dzial');
 
             function robot_sum($nr_zad, $f_sql){
-                 $conn = new mysqli("remotemysql.com", "Qp5kr9aFAZ", "nLj0fYkQ76", "Qp5kr9aFAZ");
                 $sql=$f_sql;
                 $result=$conn->query($sql);
                     echo("<table border=1>");
-                    echo("<h3>ZAD $nr_zad</h3>");
-                    echo("<li>SQL: $sql");
+                    echo("<h2>ZAD $nr_zad</h2>");
+                    echo("<h3>$sql</h3>");
                     echo("<th>dział</th>");
                     echo("<th>suma</th>");
                         while($row=$result->fetch_assoc()){
@@ -167,12 +156,11 @@ echo("<hr />");
     robot_sum(4,'SELECT dzial,sum(zarobki) as suma from pracownicy group by dzial');
 
             function robot_min($nr_zad, $f_sql){
-                      $conn = new mysqli("remotemysql.com", "Qp5kr9aFAZ", "nLj0fYkQ76", "Qp5kr9aFAZ");
                     $sql=$f_sql;
                     $result=$conn->query($sql);
                         echo("<table border=1>");
-                        echo("<h3>ZAD $nr_zad</h3>");
-                        echo("<li>SQL: $sql");
+                        echo("<h2>ZAD $nr_zad</h2>");
+                        echo("<h3>$sql</h3>");
                         echo("<th>dział</th>");
                         echo("<th>minimalne</th>");
                             while($row=$result->fetch_assoc()){
@@ -191,9 +179,9 @@ echo("<hr />");
             
             $sql=('SELECT nazwa_dzial,sum(zarobki)as suma from pracownicy, organizacja where dzial=id_org GROUP BY nazwa_dzial HAVING sum(zarobki) < 28 ');
     $result=$conn->query($sql); //mysql
-        echo("<h3>Suma zarobków w poszczególnych działach mniejsza od 28</h3>");//nazwa nad tabelą
+        echo("<h2>Suma zarobków w poszczególnych działach mniejsza od 28</h2>");//nazwa nad tabelą
         echo("<table border=1>");
-        echo("<li>SQL: $sql");
+        echo("<h3>$sql</h3>");
         echo("<th>suma</th>");
         echo("<th>nazwa działu</th>");
             while($row=$result->fetch_assoc()){
@@ -206,9 +194,9 @@ echo("<hr />");
 
         $sql=('SELECT nazwa_dzial,avg(zarobki)as suma from pracownicy, organizacja WHERE imie not like "%a" GROUP BY nazwa_dzial HAVING avg(zarobki) > 30');
     $result=$conn->query($sql); //mysql
-            echo("<h3>Średnie zarobków mężczyzn w poszczególnych działach większe od 30</h3>");//nazwa nad tabelą
+            echo("<h2>Średnie zarobków mężczyzn w poszczególnych działach większe od 30</h2>");//nazwa nad tabelą
             echo("<table border=1>");
-            echo("<li>SQL: $sql");
+            echo("<h3>$sql</h3>");
             echo("<th>średnia</th>");
             echo("<th>nazwa działu</th>");
                 while($row=$result->fetch_assoc()){
@@ -221,9 +209,9 @@ echo("<hr />");
 
             $sql=('SELECT nazwa_dzial,count(id_pracownicy)as suma from pracownicy, organizacja WHERE dzial=id_org GROUP BY dzial HAVING count(id_pracownicy) > 3');
     $result=$conn->query($sql); //mysql
-            echo("<h3>Ilość pracowników w poszczególnych działach większa od 3</h3>");//nazwa nad tabelą
+            echo("<h2>Ilość pracowników w poszczególnych działach większa od 3</h2>");//nazwa nad tabelą
             echo("<table border=1>");
-            echo("<li>SQL: $sql");
+            echo("<h3>$sql</h3>");
             echo("<th>ilość</th>");
             echo("<th>nazwa działu</th>");
                 while($row=$result->fetch_assoc()){

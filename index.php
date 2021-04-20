@@ -9,14 +9,10 @@
   
   
 <div class="nav">
-<a class="nav_link" href="https://github.com/SK-2019/php-sql-wprowadzenie-KacperKowalczyk1009"> <b> Mój GITHUB <b> </a>
-  
-  <a class="nav_link" href="/pracownicy-organizacja/pracownicy.php"><b>Pracownicy<b></a>
-   <a class="nav_link" href="/pracownicy-organizacja/funkcjeagregujace.php"><b>Funkcje Agregujace<b></a>
-   <a class="nav_link" href="/pracownicy-organizacja/pracownicy_organizacja.php"><b>Pracownicy Organizacja<b></a>
-   <a class="nav_link" href="/">Strona Glowna</a>  
-   <a class="nav_link" href="/dane-do-bazy/formularz.html"><b>Formularz<b></a>
-<a class="nav_link" href="/dane-do-bazy/daneDoBazy.php"><b>Dane do bazy<b></a>
+
+<?php
+include("assets/menu.php")
+?>
    
 
 </div>
@@ -24,14 +20,13 @@
 <div class="con">
 
 <?php
-   include("/assets/conn.php");
+   require_once("connect.php");
 
     $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org');
-    $conn = new mysqli('remotemysql.com','Qp5kr9aFAZ','nLj0fYkQ76', 'Qp5kr9aFAZ');
     $result=$conn->query($sql);
         echo("<hr />");
-        echo("<h3>Tabela Pracowników</h3>");
-        echo("<li>$sql");
+        echo("<h2>Tabela Pracowników</h2>");
+        echo("<h3>$sql</h3>");
         echo("<table border=1>");
         echo("<th>id</th>");
         echo("<th>imie</th>");
@@ -47,12 +42,11 @@
     echo("<hr />");
 
 
-    include("/assets/conn.php");
+   
 $sql=('SELECT * from pracownicy,organizacja where dzial=id_org and imie like "%a"');
-$conn = new mysqli('remotemysql.com','Qp5kr9aFAZ','nLj0fYkQ76', 'Qp5kr9aFAZ');
 $result=$conn->query($sql);
-        echo("<h3>Tabela Kobiet</h3>");//nazwa nad tabelą
-        echo("<li>$sql");
+        echo("<h2>Tabela Kobiet</h2>");//nazwa nad tabelą
+        echo("<h3>$sql</h3>");
         echo("<table border=1>");
         echo("<th>id</th>");
         echo("<th>imie</th>");
@@ -69,12 +63,10 @@ echo("<hr />");
 
 
 
-include("conn.php");
 $sql=('SELECT * from pracownicy,organizacja where dzial=id_org  order by imie asc');
-$conn = new mysqli('remotemysql.com','Qp5kr9aFAZ','nLj0fYkQ76', 'Qp5kr9aFAZ');
 $result=$conn->query($sql); //mysql
-        echo("<h3>Tabela Pracowników Posortowana Alfabetycznie</h3>");//nazwa nad tabelą
-        echo("<li>$sql");
+        echo("<h2>Tabela Pracowników Posortowana Alfabetycznie</h2>");//nazwa nad tabelą
+        echo("<h3>$sql</h3>");
         echo("<table border=1>");
         echo("<th>id</th>");
         echo("<th>imie</th>");
@@ -90,13 +82,11 @@ $result=$conn->query($sql); //mysql
         echo("</table>");
 
 
-include("conn.php");
 $sql=('SELECT * from pracownicy,organizacja where dzial=id_org  order by zarobki asc');
-$conn = new mysqli('remotemysql.com','Qp5kr9aFAZ','nLj0fYkQ76', 'Qp5kr9aFAZ');
 $result=$conn->query($sql); //mysql
-        echo("<h3>Tabela Pracowników Posortowana Zarobkami Rosnąco</h3>");//nazwa nad tabelą
+        echo("<h2>Tabela Pracowników Posortowana Zarobkami Rosnąco</h2>");//nazwa nad tabelą
         echo("<table border=1>");
-        echo("<li>$sql");
+        echo("<h3>$sql</h3>");
         echo("<th>id</th>");
         echo("<th>imie</th>");
         echo("<th>dzial</th>");

@@ -20,7 +20,7 @@ include("assets/menu.php")
 <div class="con">
 
 <?php
-   require_once("connect.php");
+   require_once("/connect.php");
 
     $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org');
     $result=$conn->query($sql);

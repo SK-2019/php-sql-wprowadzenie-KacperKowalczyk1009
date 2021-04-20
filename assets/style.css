@@ -28,7 +28,10 @@ p {
 }
 
 .head{
-  background-color: darkred;
+  background-color: rgb(180, 100, 196);
+  margin-left: 20px;
+  border: 2px solid rgb(170, 10, 90);
+  border-radius: 30px;
 }
 
 h1 {

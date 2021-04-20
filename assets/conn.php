@@ -1,13 +1,24 @@
-<?php
-$host = 'remotemysql.com';
-$db = 'Qp5kr9aFAZ';
-$user = 'Qp5kr9aFAZ';
-$pass = 'nLj0fYkQ76';
 
-// Create connection
-$conn = new mysqli('remotemysql.com','Qp5kr9aFAZ','nLj0fYkQ76', 'Qp5kr9aFAZ');
-// Check connection
+<?php
+$hostname = $_SERVER['HTTP_HOST'];
+if ($hostname == 'localhost') {
+     require_once ("config.php");
+ }
+
+$servername = $_SERVER['servername'];
+$username = $_SERVER['username'];
+$password = $_SERVER['password'];
+$dbname = $_SERVER['dbname']; 
+
+// Create connection (łącze się z moją bazą danych)
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check connection (sprawdzam połączenie z bazą danych)
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
+?>
+
+
+
 ?>

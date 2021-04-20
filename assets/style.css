@@ -2,13 +2,13 @@ body {
   background-color: lightblue;
 }
 table, th, td {
-  border: 4px solid green;
+  border: 4px solid rgb(18, 3, 156);
 }
 td {
   text-align: center;
 }
 th {
-  background-color: rgb(37, 24, 226);
+  background-color: rgb(53, 38, 255);
   color: rgb(187, 255, 0);
 }
 table {
@@ -25,6 +25,10 @@ p {
   font-size: 30px;
   text-align: center;
   
+}
+
+.head{
+  background-color: darkred;
 }
 
 h1 {

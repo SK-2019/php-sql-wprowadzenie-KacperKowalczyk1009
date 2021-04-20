@@ -1,6 +1,6 @@
 <?php
 
-$_SERVER['pass'] = 'nieznanehaslo_local'
+
 
 $_SERVER['servername'] = "remotemysql.com";
 $_SERVER['username'] = "Qp5kr9aFAZ";

@@ -6,10 +6,10 @@
 </head>
 <body>
 
-<h1>Kacper Kowalczyk 2Ti nr 16</h1>
 
 <div class="nav">
 <?php
+include("../assets/header.php");
 include("../assets/menu.php");
 ?>
 </div>

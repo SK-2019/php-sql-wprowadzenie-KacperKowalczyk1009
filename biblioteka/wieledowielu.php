@@ -21,15 +21,15 @@
 <div class="nav">
 
 <?php
-include("assets/menu.php")
+include("../assets/header.php");
+include("../assets/menu.php");
 ?>
    
 
 </div>
 
-
+<div class="con">
 <?php
-                echo("<h1>Kacper Kowalczyk</h1>");
 
                 echo("<h2>Zadanie 1</h2>");
 
@@ -53,3 +53,5 @@ include("assets/menu.php")
 
 
                         ?>
+
+                        </div>

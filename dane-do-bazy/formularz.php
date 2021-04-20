@@ -2,7 +2,6 @@
 <html>
 <head>
 <link rel="stylesheet" href="/assets/style.css">
-  <title>Kacper Kowalczyk 2Ti nr 16</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>JS Bin</title>
@@ -13,7 +12,8 @@
 <div class="nav">
 
 <?php
-include("../assets/menu.php")
+include("../assets/header.php");
+include("../assets/menu.php");
 ?>
    
 

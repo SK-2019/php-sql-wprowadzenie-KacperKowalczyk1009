@@ -8,12 +8,12 @@ td {
   text-align: center;
 }
 th {
-  background-color: green;
-  color: white;
+  background-color: rgb(37, 24, 226);
+  color: rgb(187, 255, 0);
 }
 table {
-  background-color: orange;
-  color: rgb(221, 73, 73);
+  background-color: rgba(19, 141, 211, 0.479);
+  color: rgb(255, 255, 255);
   border-collapse: collapse;
   border: 3px solid black;
   flex-direction: column;
@@ -89,7 +89,7 @@ h1 {
 
 .nav_link{
   border: 2px solid rgb(170, 125, 10);
-  border-radius: 5px;
+  border-radius: 7px;
   width: 200px;
   text-decoration: none;
   background-color: white;
@@ -106,7 +106,7 @@ h1 {
 }
 .nav_link:hover {
   border: 2px solid (darkgoldenrod);
-  border-radius: 5px;
+  border-radius: 7px;
     background-color: darkgoldenrod;
     color: white;
     box-shadow: 3px, 3px, 3px, black;

@@ -26,7 +26,11 @@ p {
   text-align: center;
   
 }
+h2 {
+  color:white;
+}
 
+ 
 .head{
   background-color: rgba(180, 100, 196, 0.582);
   margin-left: 20px;
@@ -76,7 +80,7 @@ tr:hover{
 }
 
 .nav{
-  position: fixed;
+  position: absolute;
 	height: 100%;
   width: 250px;
   box-shadow: 3px, 3px, 3px, black;

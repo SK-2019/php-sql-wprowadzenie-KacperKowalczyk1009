@@ -4,6 +4,16 @@
 <link rel="stylesheet" href="/assets/style.css">
 <link rel="shortcut icon" href="/inne/favicon.ico">
 </head>
+
+<style>
+                body {
+          background-image:url(https://w.wallhaven.cc/full/md/wallhaven-md6g59.jpg);
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+
+                }
+	</style>	
 <body>
   
   

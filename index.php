@@ -69,7 +69,6 @@ $result=$conn->query($sql);
 echo("<hr />");
 
 
-
 $sql=('SELECT * from pracownicy,organizacja where dzial=id_org  order by imie asc');
 $result=$conn->query($sql); //mysql
         echo("<h2>Tabela Pracowników Posortowana Alfabetycznie</h2>");//nazwa nad tabelą

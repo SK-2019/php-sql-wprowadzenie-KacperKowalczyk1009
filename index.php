@@ -25,8 +25,9 @@ include("assets/menu.php") ;
 </div>
 
 <div class="con">
-
+test
 <?php
+
    require_once("connect.php");
 
     $sql=('SELECT * FROM pracownicy,organizacja where dzial=id_org');

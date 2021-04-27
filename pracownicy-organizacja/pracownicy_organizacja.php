@@ -45,7 +45,7 @@ include("../assets/menu.php");
         
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
-                echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row['nazwa_dzial']."</td><td>"."</td>");
+                echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row['nazwa_dzial']."</td>");
                 echo("</tr>");
             }
         echo("</table>");
@@ -64,7 +64,7 @@ include("../assets/menu.php");
         
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
-                echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row['nazwa_dzial']."</td><td>"."</td>");
+                echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row['nazwa_dzial']."</td>");
                 echo("</tr>");
             }
         echo("</table>");
@@ -85,7 +85,7 @@ include("../assets/menu.php");
         
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
-                echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row['nazwa_dzial']."</td><td>"."</td>");
+                echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row['nazwa_dzial']."</td>");
                 echo("</tr>");
             }
         echo("</table>");
@@ -106,7 +106,7 @@ include("../assets/menu.php");
         
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
-                echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row['nazwa_dzial']."</td><td>"."</td>");
+                echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row['nazwa_dzial']."</td>");
                 echo("</tr>");
             }
         echo("</table>");
@@ -131,7 +131,7 @@ include("../assets/menu.php");
         
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
-                echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row['nazwa_dzial']."</td><td>"."</td>");
+                echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row['nazwa_dzial']."</td>");
                 echo("</tr>");
             }
         echo("</table>");
@@ -152,7 +152,7 @@ include("../assets/menu.php");
         
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
-                echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row['nazwa_dzial']."</td><td>"."</td>");
+                echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row['nazwa_dzial']."</td>");
                 echo("</tr>");
             }
         echo("</table>");
@@ -172,7 +172,7 @@ include("../assets/menu.php");
         
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
-                echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row['nazwa_dzial']."</td><td>"."</td>");
+                echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row['nazwa_dzial']."</td>");
                 echo("</tr>");
             }
         echo("</table>");
@@ -194,7 +194,7 @@ include("../assets/menu.php");
         
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
-                echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row['nazwa_dzial']."</td><td>"."</td>");
+                echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row['nazwa_dzial']."</td>");
                 echo("</tr>");
             }
         echo("</table>");
@@ -215,7 +215,7 @@ include("../assets/menu.php");
         
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
-                echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row['nazwa_dzial']."</td><td>"."</td>");
+                echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row['nazwa_dzial']."</td>");
                 echo("</tr>");
             }
         echo("</table>");

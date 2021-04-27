@@ -4,6 +4,16 @@
 <link rel="stylesheet" href="/assets/style.css">
 <link rel="shortcut icon" href="/inne/favicon.ico">
 </head>
+
+<style>
+                body {
+          background-image:url(https://images8.alphacoders.com/753/753568.jpg);
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+
+                }
+	</style>	
 <body>
 
 <div class="nav">

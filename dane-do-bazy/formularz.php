@@ -4,10 +4,21 @@
 <link rel="stylesheet" href="/assets/style.css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>JS Bin</title>
+  <title>Formularz</title>
   <link rel="shortcut icon" href="/inne/favicon.ico">
 </head>
+<style>
+                body {
+          background-image:url(https://images3.alphacoders.com/999/thumb-1920-999328.jpg);
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+
+                }
+	</style>	
+
 <body>
+
   
 <div class="nav">
 

@@ -3,6 +3,16 @@
 <link rel="stylesheet" href="/assets/style.css">
 <link rel="shortcut icon" href="/inne/favicon.ico">
 </head>
+
+<style>
+                body {
+          background-image:url(https://images3.alphacoders.com/556/556457.jpg);
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+
+                }
+	</style>	
 <body>
 <h1>Kacper Kowalczyk 2Ti nr 16</h1>
 

@@ -28,23 +28,25 @@ p {
 }
 h2 {
   color:white;
+  text-shadow: 5px 5px 5px black;
 }
 h3 {
   color:white;
+  text-shadow: 5px 5px 5px black;
 }
  
 .head{
-  background-color: rgba(0, 255, 157, 0.582);
-  margin-left: 20px;
-  border: 5px solid rgba(15, 20, 22, 0.644);
+  background-color: rgb(19, 141, 211, 0.479);
+  border: 5px solid rgba(8, 8, 8, 0.61);
   border-radius: 30px;
   width: 200px;
   padding: 10px 20px;
   color :white;
+  margin-left: 20px;
 }
 
 h1 {
-  
+  text-shadow: 5px 5px 5px black;
   color: rgb(255, 255, 255);
   text-align: center;
    font-size: 40px;
@@ -123,6 +125,12 @@ tr:hover{
   margin-top: 5px;
   box-shadow: 3px, 3px, 3px, black;
 }
+
+.relacje{
+  text-align: center;
+  margin-left: 20px;
+}
+
 .nav_link:hover {
   border: 2px solid (darkgoldenrod);
   border-radius: 7px;

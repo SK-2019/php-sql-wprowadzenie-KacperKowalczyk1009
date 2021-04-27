@@ -4,6 +4,15 @@
 <link rel="stylesheet" href="/assets/style.css">
 <link rel="shortcut icon" href="/inne/favicon.ico">
 </head>
+<style>
+                body {
+          background-image:url(https://images.alphacoders.com/234/thumb-1920-234401.png);
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+
+                }
+	</style>	
 <body>
 
 

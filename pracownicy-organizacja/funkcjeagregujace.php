@@ -4,6 +4,15 @@
 <link rel="stylesheet" href="/assets/style.css">
 <link rel="shortcut icon" href="/inne/favicon.ico">
 </head>
+<style>
+                body {
+          background-image:url(https://wallpapersboom.net/wp-content/uploads/2015/04/4517_the_legend_of_korra.jpg);
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+
+                }
+	</style>	
 <body>
 
 

@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+                body {
+          background-image:url(https://krita-artists.org/uploads/default/original/2X/5/530c1148eee35b3a13b01dc79b69ad193bc75520.jpeg);
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+
+                }
+	</style>	
 
     <div class= "nav">
     <?php

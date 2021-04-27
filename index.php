@@ -26,6 +26,8 @@ include("assets/menu.php") ;
 
 <div class="con">
 
+test
+
 <?php
 
    require_once("connect.php");

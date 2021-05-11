@@ -5,6 +5,7 @@
 <a class="nav_link" href="/pracownicy-organizacja/pracownicy_organizacja.php"><b>Pracownicy Organizacja<b></a>
 <a class="nav_link" href="/dane-do-bazy/formularz.php"><b>Formularz<b></a>
 <a class="nav_link" href="/dane-do-bazy/daneDoBazy.php"><b>Dane do bazy<b></a>
+<a class="nav_link" href="/flexbox/index.html"><b>Flexbox<b></a>
 <div class="relacje"> <h2> Relacje </h2> </div>
 <a class="nav_link" href="/relacje/biblioteka.php"><b>Biblioteka<b></a>
 <a class="nav_link" href="/relacje/spa.php"><b>Spa<b></a>

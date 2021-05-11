@@ -1,0 +1,158 @@
+.con{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-direction: row;
+    height: 150vh;
+    
+
+}
+
+
+.item{
+    display: flex;
+    background: rgb(32, 143, 180);
+    width: 600px;
+    height: 300px;
+}
+
+.kwadrat{
+    height: 75px;
+    width: 75px;
+    background: lightgreen;
+    margin: 15px;
+
+}
+
+.prostokat{
+    height: 100px;
+    width: 200px;
+    background: lightseagreen;
+    margin: 15px;
+}
+.a{
+    justify-content: flex-start;
+}
+.b{
+    justify-content: flex-end;
+}
+.c{
+    align-items: flex-end;
+}
+.d{
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.e{
+    justify-content: center;
+}
+.f{
+    justify-content: center;
+    align-items: center;
+}
+.g{
+    justify-content: center;
+    align-items: flex-end;
+}
+.h{
+    justify-content: flex-start;
+}
+.i{
+    justify-content: center;
+}
+.j{
+    justify-content: center;
+    align-items: center;
+}
+.k{
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+
+}
+
+.pierwsze{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.pierwsze:hover{
+    background-color: lightsalmon;
+    transition: 0.35s;
+    padding: 20px;
+    border-style: dashed;
+}
+
+.drugie{
+text-decoration: none;
+font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.drugie:hover{
+padding: 15px;
+transition: 0.35s;
+background-color: rgb(139, 214, 0) ;
+border-style: double;
+transform: rotateX(150deg);
+font-family: "Lucida Console", "Courier New", monospace;
+
+
+}
+
+.menu2{
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.trzecie{
+text-decoration: none;
+color: red;
+}
+
+.trzecie:hover{
+    border-radius: 25px;
+    border: 2px solid #f8d301;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+    transition: 0.35s;
+    background-color: rgb(0, 0, 0) ;
+    border-style: dashed;
+    color: white;
+    
+    
+
+}
+
+.czwarte{
+text-decoration: magenta;
+color: maroon;
+}
+
+.czwarte:hover{
+    transform: rotate(360deg);
+    transition: 1s;
+    border-radius: 25px;
+    border: 2px solid #ff1e62;
+    padding: 20px;
+    width: 150px;
+    height: 110px;
+    color: white;
+    background-image: radial-gradient(rgb(255, 238, 0), rgb(14, 216, 252), rgb(102, 247, 102));
+    
+}

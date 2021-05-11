@@ -11,3 +11,4 @@
 <a class="nav_link" href="/relacje/szkola.php"><b>Szkoła<b></a>
 <a class="nav_link" href="/relacje/przychodnia.php"><b>Przychodnia<b></a>
 <a class="nav_link" href="/relacje/sklep.php"><b>Sklep<b></a>
+<a class="nav_link" href="/relacje/galeria.html"><b>Galeria<b></a>

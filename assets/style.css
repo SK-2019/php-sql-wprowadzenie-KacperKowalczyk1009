@@ -33,6 +33,13 @@ h2 {
 h3 {
   color:white;
   text-shadow: 5px 5px 5px black;
+  text-decoration: none;
+}
+h4 {
+  color:rgb(25, 0, 255);
+  text-shadow: 5px 5px 5px black;
+  text-decoration: none;
+
 }
  
 .head{
@@ -140,4 +147,65 @@ tr:hover{
     height: 35px;
     font-size: 23px;
     transition: 0.3s;
+}
+
+
+
+
+.gallery {
+  display: flex;
+}
+
+.row {
+  background-color: rgba(0, 110, 255, 0.486);
+}
+
+.image {
+  background-color: rgba(9, 136, 179, 0.808);
+  margin: 5px;
+  padding: 0px;
+  width: 500px;
+  height: 300px;
+  /* background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain, cover; */
+  background-position: center;
+  background-size: cover;
+  transition: 0.51s;
+}
+
+.image:hover {
+  transform: scale(0.98);
+  filter: saturate(2.2) brightness(1.4);
+}
+
+.foto01 {
+  background-image: url("https://www.purepc.pl/image/news/2021/04/24_cyberpunk_2077_wiemy_ile_wyniosl_budzet_na_sama_produkcje_gry_cd_projekt_red_a_ile_na_kampanie_marketingowa_1_b.jpg");
+}
+.foto01:hover {
+  background-image: url("https://www.purepc.pl/image/news/2021/04/24_cyberpunk_2077_wiemy_ile_wyniosl_budzet_na_sama_produkcje_gry_cd_projekt_red_a_ile_na_kampanie_marketingowa_1_b.jpg");
+}
+
+.foto02 {
+  background-image: url("https://static.cdprojektred.com/thewitcher.com/media/wallpapers/witcher3/big/witcher3_pl_wallpaper_wiedzmin_3_dziki_gon_geralt_i_trofea_1920x1080_1449484774.jpg");
+}
+
+.foto03 {
+  background-image: url("https://katalogmarzen.pl/img/products/2/2019_06/balon-z-pasazerami-podczas-lotu-jpg.jpg");
+}
+
+.foto01_title {
+  background-color: rgba(255, 255, 255, 0.123);
+  padding: 2px;
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+.foto01_price {
+  background-color: rgba(255, 255, 255, 0.123);
+  padding: 2px;
+  display: block;
+}
+span{
+  text-decoration: none;
 }

@@ -26,9 +26,10 @@ include("assets/menu.php") ;
 
 <div class="con">
 
-test
-
 <?php
+ini_set('display_errors', '1');
+ini_set('display_startup_errors', '1');
+error_reporting(E_ALL);
 
    require_once("connect.php");
 
@@ -70,6 +71,7 @@ $result=$conn->query($sql);
             }
         echo("</table>");
 echo("<hr />");
+
 
 
 $sql=('SELECT * from pracownicy,organizacja where dzial=id_org  order by imie asc');

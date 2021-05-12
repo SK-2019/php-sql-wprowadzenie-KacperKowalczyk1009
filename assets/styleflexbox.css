@@ -5,6 +5,7 @@
     align-content: space-around;
     flex-direction: row;
     height: 150vh;
+    background: rgb(68, 62, 62);
     
 
 }
@@ -155,4 +156,45 @@ color: maroon;
     color: white;
     background-image: radial-gradient(rgb(255, 238, 0), rgb(14, 216, 252), rgb(102, 247, 102));
     
+}
+
+.nav{
+    position: absolute;
+      height: 100%;
+    width: 250px;
+    box-shadow: 3px, 3px, 3px, black;
+   
+      
+      align-items: space-around;
+  
+  
+  }
+
+
+  .nav_link{
+    border: 2px solid rgb(28, 48, 75);
+    border-radius: 7px;
+    width: 200px;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 5px;
+    box-shadow: 3px, 3px, 3px, black;
+  }
+
+  .nav_link:hover {
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 7px;
+    background-color: rgba(28, 48, 75, 0.836);
+    color: white;
+    box-shadow: 3px, 3px, 3px, black;
+    width: 230px;
+    height: 35px;
+    font-size: 23px;
+    transition: 0.3s;
 }

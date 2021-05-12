@@ -197,3 +197,13 @@ color: maroon;
     font-size: 23px;
     transition: 0.3s;
 }
+
+.head{
+    background-color: rgb(19, 141, 211, 0.479);
+    border: 5px solid rgba(8, 8, 8, 0.61);
+    border-radius: 30px;
+    width: 200px;
+    padding: 10px 20px;
+    color :white;
+    margin-left: 20px;
+  }

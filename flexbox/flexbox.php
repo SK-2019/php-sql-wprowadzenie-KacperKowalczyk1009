@@ -8,6 +8,16 @@
         <link rel="shortcut icon" href="/inne/favicon.ico">
         </head>
 
+        <div class="head">
+
+<?php 
+
+echo ("<h1>Kacper Kowalczyk 2Ti nr 16</h1>");
+
+?>
+
+</div>
+
         <div class="nav">
         <a class="nav_link" href="/">Strona Glowna</a>  
             </div>

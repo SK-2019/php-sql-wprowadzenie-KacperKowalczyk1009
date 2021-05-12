@@ -8,11 +8,12 @@
         <link rel="shortcut icon" href="/inne/favicon.ico">
         </head>
 
-        <body>
-            <div class="con">
-            <div class="nav">
+        <div class="nav">
         <a class="nav_link" href="/">Strona Glowna</a>  
             </div>
+
+        <body>
+            <div class="con">
                 <div class="item a">
                 <div class="prostokat">
                     <div class="menu">

@@ -6,10 +6,10 @@
 <a class="nav_link" href="/dane-do-bazy/formularz.php"><b>Formularz<b></a>
 <a class="nav_link" href="/dane-do-bazy/daneDoBazy.php"><b>Dane do bazy<b></a>
 <a class="nav_link" href="/flexbox/flexbox.php"><b>Flexbox<b></a>
+<a class="nav_link" href="/galeria/galeria.html"><b>Galeria<b></a>
 <div class="relacje"> <h2> Relacje </h2> </div>
 <a class="nav_link" href="/relacje/biblioteka.php"><b>Biblioteka<b></a>
 <a class="nav_link" href="/relacje/spa.php"><b>Spa<b></a>
 <a class="nav_link" href="/relacje/szkola.php"><b>Szkoła<b></a>
 <a class="nav_link" href="/relacje/przychodnia.php"><b>Przychodnia<b></a>
 <a class="nav_link" href="/relacje/sklep.php"><b>Sklep<b></a>
-<a class="nav_link" href="/relacje/galeria.html"><b>Galeria<b></a>
